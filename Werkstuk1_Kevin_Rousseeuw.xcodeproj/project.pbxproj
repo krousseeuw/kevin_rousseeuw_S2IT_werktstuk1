@@ -12,6 +12,9 @@
 		B34B47CE211839F300FC9AA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34B47CC211839F300FC9AA0 /* Main.storyboard */; };
 		B34B47D0211839F300FC9AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B34B47CF211839F300FC9AA0 /* Assets.xcassets */; };
 		B34B47D3211839F300FC9AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34B47D1211839F300FC9AA0 /* LaunchScreen.storyboard */; };
+		B34B47DB2118416300FC9AA0 /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47DA2118416300FC9AA0 /* Persoon.swift */; };
+		B34B47DD2118418100FC9AA0 /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47DC2118418100FC9AA0 /* Adres.swift */; };
+		B34B47DF211843A100FC9AA0 /* MyCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47DE211843A100FC9AA0 /* MyCoordinates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B34B47CF211839F300FC9AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B34B47D2211839F300FC9AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B34B47D4211839F300FC9AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34B47DA2118416300FC9AA0 /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
+		B34B47DC2118418100FC9AA0 /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
+		B34B47DE211843A100FC9AA0 /* MyCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoordinates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				B34B47C8211839F300FC9AA0 /* AppDelegate.swift */,
 				B34B47CA211839F300FC9AA0 /* ViewController.swift */,
+				B34B47DA2118416300FC9AA0 /* Persoon.swift */,
+				B34B47DE211843A100FC9AA0 /* MyCoordinates.swift */,
+				B34B47DC2118418100FC9AA0 /* Adres.swift */,
 				B34B47CC211839F300FC9AA0 /* Main.storyboard */,
 				B34B47CF211839F300FC9AA0 /* Assets.xcassets */,
 				B34B47D1211839F300FC9AA0 /* LaunchScreen.storyboard */,
@@ -92,7 +101,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = Emenka;
+				ORGANIZATIONNAME = krousseeuw;
 				TargetAttributes = {
 					B34B47C4211839F200FC9AA0 = {
 						CreatedOnToolsVersion = 9.2;
@@ -137,7 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B34B47CB211839F300FC9AA0 /* ViewController.swift in Sources */,
+				B34B47DD2118418100FC9AA0 /* Adres.swift in Sources */,
+				B34B47DF211843A100FC9AA0 /* MyCoordinates.swift in Sources */,
 				B34B47C9211839F300FC9AA0 /* AppDelegate.swift in Sources */,
+				B34B47DB2118416300FC9AA0 /* Persoon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
