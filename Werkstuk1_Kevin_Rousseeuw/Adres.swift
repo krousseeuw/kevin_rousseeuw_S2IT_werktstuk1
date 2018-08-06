@@ -21,4 +21,12 @@ class Adres: NSObject {
         postcode = ""
         gemeente = ""
     }
+    
+    init(straat: String, huisnummer: Int, postcode: String, gemeente: String){
+        self.straat = straat
+        self.huisnummer = huisnummer
+        self.postcode = postcode
+        self.gemeente = gemeente
+    }
+    
 }
