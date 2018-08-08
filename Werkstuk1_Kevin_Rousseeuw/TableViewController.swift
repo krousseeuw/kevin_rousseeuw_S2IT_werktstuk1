@@ -71,6 +71,13 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "naarPersoonDetail" {
+            let vc = segue.destination as! ItemDetailViewController
+            let indexPath = self.tableView.indexPathForSelectedRow
+            vc.persoon = personen[(indexPath?.row)!]
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

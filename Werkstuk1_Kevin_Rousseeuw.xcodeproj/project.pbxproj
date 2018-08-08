@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0B7E0D211B983600276C42 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */; };
 		3F872194211A1F6C00C7A422 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F872193211A1F6C00C7A422 /* TableViewController.swift */; };
 		B34B47C9211839F300FC9AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47C8211839F300FC9AA0 /* AppDelegate.swift */; };
 		B34B47CB211839F300FC9AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47CA211839F300FC9AA0 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		3F872193211A1F6C00C7A422 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B34B47C5211839F200FC9AA0 /* Werkstuk1_Kevin_Rousseeuw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1_Kevin_Rousseeuw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34B47C8211839F300FC9AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				B34B47DC2118418100FC9AA0 /* Adres.swift */,
 				B34B47CC211839F300FC9AA0 /* Main.storyboard */,
 				3F872193211A1F6C00C7A422 /* TableViewController.swift */,
+				3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */,
 				B34B47CF211839F300FC9AA0 /* Assets.xcassets */,
 				B34B47D1211839F300FC9AA0 /* LaunchScreen.storyboard */,
 				B34B47D4211839F300FC9AA0 /* Info.plist */,
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B34B47CB211839F300FC9AA0 /* ViewController.swift in Sources */,
+				3F0B7E0D211B983600276C42 /* ItemDetailViewController.swift in Sources */,
 				3F872194211A1F6C00C7A422 /* TableViewController.swift in Sources */,
 				B34B47DD2118418100FC9AA0 /* Adres.swift in Sources */,
 				B34B47DF211843A100FC9AA0 /* MyCoordinates.swift in Sources */,
