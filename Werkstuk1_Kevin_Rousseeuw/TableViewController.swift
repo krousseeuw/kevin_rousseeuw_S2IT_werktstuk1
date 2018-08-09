@@ -73,9 +73,10 @@ class TableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "naarPersoonDetail" {
-            let vc = segue.destination as! ItemDetailViewController
+            let tab = segue.destination as! UITabBarController
+            let details = tab.viewControllers?.first as! ItemDetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow
-            vc.persoon = personen[(indexPath?.row)!]
+            details.persoon = personen[(indexPath?.row)!]
         }
     }
 
