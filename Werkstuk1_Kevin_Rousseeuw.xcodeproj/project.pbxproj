@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F0B7E0D211B983600276C42 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */; };
+		3F5029E8211CF01E00098161 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5029E7211CF01E00098161 /* MapKit.framework */; };
+		3F5029EA211D7C1900098161 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5029E9211D7C1900098161 /* MyAnnotation.swift */; };
 		3F872194211A1F6C00C7A422 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F872193211A1F6C00C7A422 /* TableViewController.swift */; };
 		B34B47C9211839F300FC9AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47C8211839F300FC9AA0 /* AppDelegate.swift */; };
 		B34B47CB211839F300FC9AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47CA211839F300FC9AA0 /* ViewController.swift */; };
@@ -16,11 +18,12 @@
 		B34B47D3211839F300FC9AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34B47D1211839F300FC9AA0 /* LaunchScreen.storyboard */; };
 		B34B47DB2118416300FC9AA0 /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47DA2118416300FC9AA0 /* Persoon.swift */; };
 		B34B47DD2118418100FC9AA0 /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47DC2118418100FC9AA0 /* Adres.swift */; };
-		B34B47DF211843A100FC9AA0 /* MyCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47DE211843A100FC9AA0 /* MyCoordinates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		3F5029E7211CF01E00098161 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F5029E9211D7C1900098161 /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		3F872193211A1F6C00C7A422 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B34B47C5211839F200FC9AA0 /* Werkstuk1_Kevin_Rousseeuw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1_Kevin_Rousseeuw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34B47C8211839F300FC9AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +34,6 @@
 		B34B47D4211839F300FC9AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B34B47DA2118416300FC9AA0 /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
 		B34B47DC2118418100FC9AA0 /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
-		B34B47DE211843A100FC9AA0 /* MyCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoordinates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5029E8211CF01E00098161 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5029E6211CF01E00098161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5029E7211CF01E00098161 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B34B47BC211839F200FC9AA0 = {
 			isa = PBXGroup;
 			children = (
 				B34B47C7211839F200FC9AA0 /* Werkstuk1_Kevin_Rousseeuw */,
 				B34B47C6211839F200FC9AA0 /* Products */,
+				3F5029E6211CF01E00098161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +79,6 @@
 				B34B47C8211839F300FC9AA0 /* AppDelegate.swift */,
 				B34B47CA211839F300FC9AA0 /* ViewController.swift */,
 				B34B47DA2118416300FC9AA0 /* Persoon.swift */,
-				B34B47DE211843A100FC9AA0 /* MyCoordinates.swift */,
 				B34B47DC2118418100FC9AA0 /* Adres.swift */,
 				B34B47CC211839F300FC9AA0 /* Main.storyboard */,
 				3F872193211A1F6C00C7A422 /* TableViewController.swift */,
@@ -75,6 +86,7 @@
 				B34B47CF211839F300FC9AA0 /* Assets.xcassets */,
 				B34B47D1211839F300FC9AA0 /* LaunchScreen.storyboard */,
 				B34B47D4211839F300FC9AA0 /* Info.plist */,
+				3F5029E9211D7C1900098161 /* MyAnnotation.swift */,
 			);
 			path = Werkstuk1_Kevin_Rousseeuw;
 			sourceTree = "<group>";
@@ -112,6 +124,11 @@
 					B34B47C4211839F200FC9AA0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -153,9 +170,9 @@
 			files = (
 				B34B47CB211839F300FC9AA0 /* ViewController.swift in Sources */,
 				3F0B7E0D211B983600276C42 /* ItemDetailViewController.swift in Sources */,
+				3F5029EA211D7C1900098161 /* MyAnnotation.swift in Sources */,
 				3F872194211A1F6C00C7A422 /* TableViewController.swift in Sources */,
 				B34B47DD2118418100FC9AA0 /* Adres.swift in Sources */,
-				B34B47DF211843A100FC9AA0 /* MyCoordinates.swift in Sources */,
 				B34B47C9211839F300FC9AA0 /* AppDelegate.swift in Sources */,
 				B34B47DB2118416300FC9AA0 /* Persoon.swift in Sources */,
 			);
