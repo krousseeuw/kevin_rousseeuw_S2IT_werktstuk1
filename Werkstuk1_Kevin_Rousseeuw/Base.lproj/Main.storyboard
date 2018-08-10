@@ -50,15 +50,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lGg-KV-W6u">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lGg-KV-W6u">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="umq-7f-A4h" id="xC0-JM-vaY"/>
                                 </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lGg-KV-W6u" secondAttribute="trailing" id="LP6-SL-EP8"/>
+                            <constraint firstItem="lGg-KV-W6u" firstAttribute="top" secondItem="wbV-xN-a6r" secondAttribute="top" id="XEx-9h-w52"/>
+                            <constraint firstItem="lGg-KV-W6u" firstAttribute="bottom" secondItem="wbV-xN-a6r" secondAttribute="bottom" id="emf-fz-PbT"/>
+                            <constraint firstItem="lGg-KV-W6u" firstAttribute="leading" secondItem="VLF-te-2Ks" secondAttribute="leading" id="zFf-MV-gh2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wbV-xN-a6r"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="Zrf-tM-KY4"/>
