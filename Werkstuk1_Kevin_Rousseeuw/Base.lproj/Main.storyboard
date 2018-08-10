@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -118,19 +119,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4yZ-IO-3aj">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4yZ-IO-3aj">
                                 <rect key="frame" x="-2" y="277" width="377" height="341"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="8ui-wa-TPI" id="x68-BQ-mdw"/>
                                 </connections>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38e-RF-BE7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="38e-RF-BE7">
                                 <rect key="frame" x="244" y="79" width="115" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="Ld3-0b-wgb"/>
+                                    <constraint firstAttribute="height" constant="115" id="wsr-03-ucB"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="38e-RF-BE7" firstAttribute="trailing" secondItem="Lmk-OI-KGG" secondAttribute="trailingMargin" id="14a-13-oSp"/>
+                            <constraint firstItem="4yZ-IO-3aj" firstAttribute="leading" secondItem="Lmk-OI-KGG" secondAttribute="leadingMargin" constant="-18" id="53m-jt-zOw"/>
+                            <constraint firstItem="4yZ-IO-3aj" firstAttribute="top" secondItem="38e-RF-BE7" secondAttribute="bottom" constant="83" id="BAP-gC-DeN"/>
+                            <constraint firstAttribute="trailing" secondItem="4yZ-IO-3aj" secondAttribute="trailing" id="FYr-y5-PSZ"/>
+                            <constraint firstItem="4yZ-IO-3aj" firstAttribute="bottom" secondItem="ErU-XP-2iH" secondAttribute="bottom" id="fGl-LG-QmE"/>
+                            <constraint firstItem="38e-RF-BE7" firstAttribute="top" secondItem="ErU-XP-2iH" secondAttribute="top" constant="15" id="jAc-7o-8Kz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ErU-XP-2iH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Details" image="user_male" id="mbT-3g-IES"/>
