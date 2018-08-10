@@ -44,33 +44,10 @@ class ItemDetailViewController: UIViewController, MKMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    // TODO: Move naar betere plaatsen, even bij elkaar houden voor gemakkelijker cp operatie
-    
-    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let center = CLLocationCoordinate2D(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         
         mapView.setRegion(region, animated: true)
     }
-    
-    
-    
-    /*func mapView(_ mapView: MKMapView){
-        let center = CLLocationCoordinate2D(latitude: persoon.gpscoordinaten.latitude, longitude: persoon.gpscoordinaten.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
-        
-        mapView.setRegion(region, animated: true)
-    }*/
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

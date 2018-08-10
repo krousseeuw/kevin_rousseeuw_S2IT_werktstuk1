@@ -34,13 +34,10 @@ class NearbyViewController: UIViewController, MKMapViewDelegate {
             annotations.append(annotation)
         }
         
-        let mylocation = CLLocation(latitude: personen[selectedPersoonIndex].gpscoordinaten.latitude, longitude: personen[selectedPersoonIndex].gpscoordinaten.longitude)
+        let selectedUserLocation = CLLocation(latitude: personen[selectedPersoonIndex].gpscoordinaten.latitude, longitude: personen[selectedPersoonIndex].gpscoordinaten.longitude)
         
-        annotations.sort(by: { $0.distance(to: mylocation) < $1.distance(to: mylocation) })
-        
-        //let coordinate: CLLocationCoordinate2D = persoon.gpscoordinaten
-        
-        //let annotation: MyAnnotation = MyAnnotation(coordinate: coordinate, title: volleNaam)
+        // Reference from: https://stackoverflow.com/questions/35199363/sort-array-by-calculated-distance-in-swift
+        annotations.sort(by: { $0.distance(to: selectedUserLocation) < $1.distance(to: selectedUserLocation) })
         
         self.myMapView.addAnnotations(annotations)
         self.myMapView.selectAnnotation(annotations[0] as MKAnnotation, animated: true)

@@ -14,6 +14,7 @@ class MyAnnotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
     
+    // Reference from: https://stackoverflow.com/questions/35199363/sort-array-by-calculated-distance-in-swift
     var location: CLLocation {
         return CLLocation(latitude: self.coordinate.latitude, longitude: self.coordinate.longitude)
     }
