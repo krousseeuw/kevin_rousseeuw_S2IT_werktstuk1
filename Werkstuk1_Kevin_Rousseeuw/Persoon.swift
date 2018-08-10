@@ -18,6 +18,9 @@ class Persoon: NSObject {
     var adres: Adres
     var gpscoordinaten: CLLocationCoordinate2D
     var telefoonnummer: String
+    var volleNaam: String {
+        return self.voornaam + " " + self.naam
+    }
     
     override init() {
         naam = ""

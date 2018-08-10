@@ -10,6 +10,7 @@
 		3F0B7E0D211B983600276C42 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */; };
 		3F5029E8211CF01E00098161 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5029E7211CF01E00098161 /* MapKit.framework */; };
 		3F5029EA211D7C1900098161 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5029E9211D7C1900098161 /* MyAnnotation.swift */; };
+		3F5029EC211DAE5900098161 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5029EB211DAE5900098161 /* NearbyViewController.swift */; };
 		3F872194211A1F6C00C7A422 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F872193211A1F6C00C7A422 /* TableViewController.swift */; };
 		B34B47C9211839F300FC9AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47C8211839F300FC9AA0 /* AppDelegate.swift */; };
 		B34B47CB211839F300FC9AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B47CA211839F300FC9AA0 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		3F5029E7211CF01E00098161 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3F5029E9211D7C1900098161 /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
+		3F5029EB211DAE5900098161 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		3F872193211A1F6C00C7A422 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B34B47C5211839F200FC9AA0 /* Werkstuk1_Kevin_Rousseeuw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk1_Kevin_Rousseeuw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34B47C8211839F300FC9AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				B34B47DA2118416300FC9AA0 /* Persoon.swift */,
 				B34B47DC2118418100FC9AA0 /* Adres.swift */,
 				B34B47CC211839F300FC9AA0 /* Main.storyboard */,
+				3F5029EB211DAE5900098161 /* NearbyViewController.swift */,
 				3F872193211A1F6C00C7A422 /* TableViewController.swift */,
 				3F0B7E0C211B983600276C42 /* ItemDetailViewController.swift */,
 				B34B47CF211839F300FC9AA0 /* Assets.xcassets */,
@@ -173,6 +176,7 @@
 				3F5029EA211D7C1900098161 /* MyAnnotation.swift in Sources */,
 				3F872194211A1F6C00C7A422 /* TableViewController.swift in Sources */,
 				B34B47DD2118418100FC9AA0 /* Adres.swift in Sources */,
+				3F5029EC211DAE5900098161 /* NearbyViewController.swift in Sources */,
 				B34B47C9211839F300FC9AA0 /* AppDelegate.swift in Sources */,
 				B34B47DB2118416300FC9AA0 /* Persoon.swift in Sources */,
 			);

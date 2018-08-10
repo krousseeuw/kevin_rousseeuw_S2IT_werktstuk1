@@ -25,8 +25,7 @@ class ItemDetailViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let volleNaam = persoon.voornaam + " " + persoon.naam
-        self.naamLabel.text = volleNaam
+        self.naamLabel.text = persoon.volleNaam
         self.fotoImageView.image = UIImage(named: persoon.foto)
         self.telefoonnummerLabel.text = persoon.telefoonnummer
         self.straatLijnLabel.text = persoon.adres.straat + " " + String(persoon.adres.huisnummer)
@@ -34,7 +33,7 @@ class ItemDetailViewController: UIViewController, MKMapViewDelegate {
         
         let coordinate: CLLocationCoordinate2D = persoon.gpscoordinaten
         
-        let annotation: MyAnnotation = MyAnnotation(coordinate: coordinate, title: volleNaam)
+        let annotation: MyAnnotation = MyAnnotation(coordinate: coordinate, title: persoon.volleNaam)
         
         self.myMapView.addAnnotation(annotation as MKAnnotation)
         self.myMapView.selectAnnotation(annotation as MKAnnotation, animated: true)
@@ -54,6 +53,8 @@ class ItemDetailViewController: UIViewController, MKMapViewDelegate {
         
         mapView.setRegion(region, animated: true)
     }
+    
+    
     
     /*func mapView(_ mapView: MKMapView){
         let center = CLLocationCoordinate2D(latitude: persoon.gpscoordinaten.latitude, longitude: persoon.gpscoordinaten.longitude)

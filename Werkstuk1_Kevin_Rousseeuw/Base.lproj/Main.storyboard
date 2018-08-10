@@ -42,21 +42,33 @@
             </objects>
             <point key="canvasLocation" x="-131" y="-98"/>
         </scene>
-        <!--Item 2-->
+        <!--Nearby View Controller-->
         <scene sceneID="Mk4-xt-hQw">
             <objects>
-                <viewController id="umq-7f-A4h" sceneMemberID="viewController">
+                <viewController id="umq-7f-A4h" customClass="NearbyViewController" customModule="Werkstuk1_Kevin_Rousseeuw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VLF-te-2Ks">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lGg-KV-W6u">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="umq-7f-A4h" id="xC0-JM-vaY"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wbV-xN-a6r"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Zrf-tM-KY4"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Zrf-tM-KY4"/>
+                    <connections>
+                        <outlet property="myMapView" destination="lGg-KV-W6u" id="82g-0i-0s5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Flq-Ke-dIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1577" y="230"/>
+            <point key="canvasLocation" x="1576.8" y="229.83508245877064"/>
         </scene>
         <!--Details-->
         <scene sceneID="Bd1-S7-EW4">
